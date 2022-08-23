@@ -40,9 +40,9 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <th scope="row"><c:out value="${user.id}" default="empty attribute"/></th>
+                    <td>${user.username}</td>
+                    <td>${user.email}</td>
                     <td>
                         <a href="<c:url value="/user/delete"/>">
                             Usuń
@@ -55,7 +55,7 @@
                         </a>
                     </td>
                 </tr>
-                <tr>
+<%--                <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
@@ -65,7 +65,7 @@
                     <th scope="row">3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
-                </tr>
+                </tr>--%>
                 </tbody>
             </table>
 
@@ -74,3 +74,4 @@
     </div>
 </div>
 <jsp:include page="/fragments/footer.jsp"/>
+
