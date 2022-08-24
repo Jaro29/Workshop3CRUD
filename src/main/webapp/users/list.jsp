@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page isELIgnored="false" %>
+<%--<%@ page isELIgnored="false" %>--%>
 
 <jsp:include page="/fragments/header.jsp"/>
 
@@ -23,8 +23,8 @@
                 </nav>
                 <!-- End of Topbar -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                    <h1 class="h3 mb-0 text-gray-800">User CRUD</h1>
+                    <a href="<c:url value="/users/add.jsp"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                             class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika </a>
                 </div>
             </div>
@@ -39,34 +39,26 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                        <a href="<c:url value="/user/delete"/>">
-                            Usuń
-                        </a>
-                        <a href="<c:url value="/user/edit"/>">
-                            Edytuj
-                        </a>
-                        <a href="<c:url value="/user/show"/>">
-                            Pokaż
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
+                <c:forEach var="user" items="${allUsers}">
+                    <tr>
+                        <th scope="row">${user.id}</th>
+                        <td>${user.username}</td>
+                        <td>${user.email}</td>
+                        <td>
+                            <a href="<c:url value="/user/delete?userId="/>${user.id}">
+                                Usuń
+                            </a>
+                            <a href="<c:url value="/user/edit?userId="/>${user.id}">
+                                Edytuj
+                            </a>
+                            <a href="<c:url value="/user/show?userId="/>${user.id}">
+                                Pokaż
+                            </a>
+                        </td>
+                    </tr>
+
+                </c:forEach>
+
             </table>
 
         </div>

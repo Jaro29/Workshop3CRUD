@@ -10,7 +10,7 @@ public class UserShow extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDao userDao = new UserDao();
-        User user = userDao.read(1);
+        User user = userDao.read(Integer.parseInt(request.getParameter("userId")));
         request.setAttribute("user", user);
 
 

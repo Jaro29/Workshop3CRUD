@@ -9,7 +9,10 @@ import java.io.IOException;
 public class UserDelete extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        UserDao userDao = new UserDao();
+//        User user = userDao.read(Integer.parseInt(request.getParameter("userId")));
+        userDao.delete(Integer.parseInt(request.getParameter("userId")));
+        response.sendRedirect("/user/list");
     }
 
     @Override

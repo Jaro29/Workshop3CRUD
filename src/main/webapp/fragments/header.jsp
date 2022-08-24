@@ -31,7 +31,7 @@
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center"
-           href="<c:url value="/users/list.jsp"/>">
+           href="<c:url value="/user/list"/>">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -43,7 +43,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="<c:url value="/users/list.jsp"/>">
+            <a class="nav-link" href="<c:url value="/user/list"/>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>

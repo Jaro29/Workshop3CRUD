@@ -9,19 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63378487-ddb9-476b-a5d7-ed5f8bbe4195" name="Changes" comment="dodane pliki szblonu, DAO, DbUtil">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/show.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="63378487-ddb9-476b-a5d7-ed5f8bbe4195" name="Changes" comment="UserShow działa">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserShow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/fragments/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fragments/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/fragments/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fragments/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/show.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,21 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jaryinder/IdeaProjects/Workshop3CRUD/src/main/java/pl/coderslab/users&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/jaryinder/IdeaProjects/Workshop3CRUD/src/main/java/pl/coderslab/users",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/pl/coderslab/users" />
@@ -207,7 +212,10 @@
       <workItem from="1661249594773" duration="7456000" />
       <workItem from="1661257079498" duration="393000" />
       <workItem from="1661264773364" duration="9744000" />
-      <workItem from="1661274656272" duration="3302000" />
+      <workItem from="1661274656272" duration="5643000" />
+      <workItem from="1661333828707" duration="7855000" />
+      <workItem from="1661343722357" duration="2705000" />
+      <workItem from="1661352136939" duration="2162000" />
     </task>
     <task id="LOCAL-00001" summary="dodane pliki szblonu, DAO, DbUtil">
       <created>1661257323247</created>
@@ -216,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661257323247</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UserShow działa">
+      <created>1661278382627</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661278382627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +250,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodane pliki szblonu, DAO, DbUtil" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodane pliki szblonu, DAO, DbUtil" />
+    <MESSAGE value="UserShow działa" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserShow działa" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

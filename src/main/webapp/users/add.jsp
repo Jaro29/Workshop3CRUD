@@ -23,13 +23,13 @@
                 </nav>
                 <!-- End of Topbar -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika </a>
+                    <h1 class="h3 mb-0 text-gray-800">User CRUD</h1>
+                    <a href="<c:url value="/user/list"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Lista użytkowników </a>
                 </div>
             </div>
 
-            <form>
+            <form action="/user/add" method="post">
                 <div class="form-group">
                     <label for="exampleInputUser">Username</label>
                     <input type="text" name="username" class="form-control" id="exampleInputUser" aria-describedby="userHelp">
