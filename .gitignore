@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+.idea
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -36,3 +37,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb.xml
+/.idea/dataSources.local.xml
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/information_schema.FNRwLQ.zip
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/mysql.osA4Bg.meta
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/sakila.oXLGyQ.meta
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/sakila.oXLGyQ.zip
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/sys.zb4BAA.meta
+/.idea/dataSources/a91bc6e0-86f5-4c21-a174-c575da3cbdeb/storage_v2/_src_/schema/sys.zb4BAA.zip
